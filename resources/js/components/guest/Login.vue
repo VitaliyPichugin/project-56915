@@ -30,9 +30,6 @@
 
 <script>
     export default {
-        mounted() {
-            console.log('Login mounted.')
-        },
         data(){
           return {
               csrf: document.querySelector('meta[name="csrf-token"]').getAttribute('content')

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <button class="btn btn-info" @click="toogkeAuth">Toogel</button>
+        <p class="text-right auth" @click="toogkeAuth">{{login == true ? "Registration" : "Login"}}</p>
         <div v-if="login">
             <login></login>
         </div>
@@ -13,7 +13,9 @@
 <script>
     import registration from './Registration.vue';
     import login from './Login.vue';
+    import toastr from 'toastr';
     export default {
+        props: ['errors'],
         components: {
             registration,
             login
@@ -29,9 +31,17 @@
                     this.login = true;
                 else this.login = false;
             },
+            checkErrors: function () {
+                let errors = this.errors;
+                if (errors[0]) {
+                    errors.forEach(error => {
+                        toastr.error(error);
+                    });
+                }
+            }
         },
         mounted() {
-            console.log('Auth mounted.')
+            this.checkErrors();
         }
     }
 </script>

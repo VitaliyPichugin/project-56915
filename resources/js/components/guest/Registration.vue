@@ -1,6 +1,6 @@
 <template>
     <div>
-        <form method="POST" id="login-form" class="login-form active error" action="/login">
+        <form method="POST" id="login-form" class="login-form active error" action="/register">
             <input type="hidden" name="_token" :value="csrf"/>
             <label>User Registration</label>
             <input id="name"
@@ -48,8 +48,14 @@
 
 <script>
     export default {
+        props: ['method'],
         mounted() {
             console.log('Reg mounted.')
+        },
+        data(){
+            return {
+                csrf: document.querySelector('meta[name="csrf-token"]').getAttribute('content')
+            }
         }
     }
 </script>

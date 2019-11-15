@@ -22,7 +22,8 @@
     </div>
     <footer>
         <div class="center">
-            <div style="font-weight:300;font-style:normal">© Endless Loneliness</div>		</div>
+            <div style="font-weight:300;font-style:normal">© Endless Loneliness</div>
+        </div>
     </footer>
     <picture class="bg-img">
         <img src="{{asset('/img/login.jpg')}}">
@@ -30,7 +31,7 @@
 </div>
 
 <div class="login-form-container" id="app">
-    <auth></auth>
+    <auth :errors="{{$errors->any() ? json_encode($errors->all()) : json_encode([false]) }}"></auth>
     <div id="btn-open-login-form" class="btn-open-login-form">
         <img src="{{asset('img/red_lock.png')}}" width="40px">
     </div>
