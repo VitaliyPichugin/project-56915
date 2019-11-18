@@ -41,6 +41,16 @@
                    required autocomplete="new-password"
                    placeholder="Confirm Password"
             >
+            <input id="invite"
+                   width="100%"
+                   type="text"
+                   size="20"
+                   class="input username"
+                   name="invite"
+                   required
+                   autocomplete="invite"
+                   placeholder="Invite"
+            >
             <input type="submit" class="button" name="submit" id="submit" value="Register" tabindex="4" />
         </form>
     </div>

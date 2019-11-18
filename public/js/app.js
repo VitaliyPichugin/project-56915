@@ -2028,6 +2028,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['method'],
   mounted: function mounted() {
@@ -38059,6 +38069,20 @@ var render = function() {
             required: "",
             autocomplete: "new-password",
             placeholder: "Confirm Password"
+          }
+        }),
+        _vm._v(" "),
+        _c("input", {
+          staticClass: "input username",
+          attrs: {
+            id: "invite",
+            width: "100%",
+            type: "text",
+            size: "20",
+            name: "invite",
+            required: "",
+            autocomplete: "invite",
+            placeholder: "Invite"
           }
         }),
         _vm._v(" "),
