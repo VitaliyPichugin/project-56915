@@ -1,6 +1,6 @@
 <template>
     <div>
-        <p class="text-right auth" @click="toogkeAuth">{{login == true ? "Registration" : "Login"}}</p>
+        <p class="text-right auth" @click="toggleAuth">{{login == true ? "Registration" : "Login"}}</p>
         <div v-if="login">
             <login></login>
         </div>
@@ -26,10 +26,8 @@
             }
         },
         methods: {
-            toogkeAuth: function () {
-                if (!this.login)
-                    this.login = true;
-                else this.login = false;
+            toggleAuth: function () {
+                this.login = false ? true : false;
             },
             checkErrors: function () {
                 let errors = this.errors;

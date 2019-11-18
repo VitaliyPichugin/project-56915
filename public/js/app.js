@@ -1902,8 +1902,8 @@ __webpack_require__.r(__webpack_exports__);
     };
   },
   methods: {
-    toogkeAuth: function toogkeAuth() {
-      if (!this.login) this.login = true;else this.login = false;
+    toggleAuth: function toggleAuth() {
+      this.login = false ? undefined : false;
     },
     checkErrors: function checkErrors() {
       var errors = this.errors;
@@ -37888,7 +37888,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("p", { staticClass: "text-right auth", on: { click: _vm.toogkeAuth } }, [
+    _c("p", { staticClass: "text-right auth", on: { click: _vm.toggleAuth } }, [
       _vm._v(_vm._s(_vm.login == true ? "Registration" : "Login"))
     ]),
     _vm._v(" "),
