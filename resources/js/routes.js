@@ -4,6 +4,7 @@ import VueRouter from 'vue-router';
 import Home from '@/js/components/Home';
 import About from '@/js/components/About';
 import Setting from '@/js/components/Setting';
+import Post from '@/js/components/Post';
 
 Vue.use(VueRouter);
 
@@ -24,6 +25,11 @@ const router = new VueRouter({
            path: '/setting',
            name: 'setting',
            component: Setting
+       },
+       {
+           path: '/post',
+           name: 'post',
+           component: Post
        },
    ]
 });

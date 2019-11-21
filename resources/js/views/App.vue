@@ -64,6 +64,11 @@
                     url: '/setting',
                     icon: 'settings',
                 },
+                {
+                    name: 'Post',
+                    url: '/post',
+                    icon: 'settings',
+                },
             ],
         }),
     }
