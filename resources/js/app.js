@@ -1,6 +1,7 @@
 import './bootstrap';
 import Vue from 'vue';
 import Vuetify from 'vuetify';
+import 'material-design-icons-iconfont/dist/material-design-icons.css'
 
 //routes
 import Routes from '@/js/routes.js';
@@ -14,7 +15,10 @@ Vue.use(Vuetify);
 
 const app = new Vue({
     el: '#app',
-    vuetify : new Vuetify(),
+    vuetify : new Vuetify({
+        icons: {iconfont: 'mdiSvg',},
+        theme: { dark: true },
+    }),
     router: Routes,
     render: h => h(App),
 });

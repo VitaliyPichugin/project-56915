@@ -1,3 +1,3 @@
 <template>
-    <div>Home Component</div>
+    <v-flex>Home</v-flex>
 </template>

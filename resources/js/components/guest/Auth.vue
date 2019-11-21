@@ -27,7 +27,9 @@
         },
         methods: {
             toggleAuth: function () {
-                this.login = false ? true : false;
+                if (!this.login)
+                    this.login = true;
+                else this.login = false;
             },
             checkErrors: function () {
                 let errors = this.errors;

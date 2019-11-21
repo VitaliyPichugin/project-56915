@@ -1,9 +1,3 @@
-/**
- * jQuery.browser.mobile (http://detectmobilebrowser.com/)
- * jQuery.browser.mobile will be true if the browser is a mobile device
- **/
-
-
 jQuery(document).ready(function() {
     jQuery(window).resize();
     jQuery('.main-container > div:not(".preloader")').each(function() {

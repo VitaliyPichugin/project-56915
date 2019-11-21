@@ -3,6 +3,7 @@ import VueRouter from 'vue-router';
 
 import Home from '@/js/components/Home';
 import About from '@/js/components/About';
+import Setting from '@/js/components/Setting';
 
 Vue.use(VueRouter);
 
@@ -18,6 +19,11 @@ const router = new VueRouter({
            path: '/about',
            name: 'about',
            component: About
+       },
+       {
+           path: '/setting',
+           name: 'setting',
+           component: Setting
        },
    ]
 });

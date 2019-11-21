@@ -9,4 +9,9 @@ class IndexController extends Controller
     {
         return view('layouts.app');
     }
+
+    public function test()
+    {
+        return view('layouts.app');
+    }
 }
