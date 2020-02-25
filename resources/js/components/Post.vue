@@ -1,5 +1,7 @@
 <template>
-    <post-component></post-component>
+    <v-content>
+       <post-component></post-component>
+    </v-content>
 </template>
 
 <script>

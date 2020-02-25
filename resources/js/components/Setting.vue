@@ -1,5 +1,6 @@
 <template>
-                <v-row
+    <v-content>
+        <v-row
                         align="center"
                         justify="center"
 
@@ -76,7 +77,7 @@
                         </v-card>
                     </v-col>
                 </v-row>
-
+    </v-content>
 </template>
 
 <script>

@@ -16,24 +16,13 @@
                 </div>
             </v-list>
         </v-navigation-drawer>
-
         <v-app-bar app clipped-left>
             <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
             <v-toolbar-title>Application</v-toolbar-title>
         </v-app-bar>
-
-        <v-content>
-            <v-container fluid fill-height>
-                <v-layout align-center justify-center>
-                    <v-flex >
-                       <router-view></router-view>
-                    </v-flex>
-                </v-layout>
-            </v-container>
-        </v-content>
-
-        <v-footer app >
-            <span class="text-lg-center" >&copy; 2019</span>
+            <router-view></router-view>
+        <v-footer app class="text-right" style="display: block" >
+            <span>&copy; 2019</span>
         </v-footer>
     </v-app>
 </template>

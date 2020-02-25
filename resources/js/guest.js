@@ -35,10 +35,10 @@ jQuery(document).ready(function() {
     });
 
     setTimeout(function() {
-        jQuery('.main-container > .preloader').fadeOut(400, function() {
-            jQuery('.login-form-container').fadeIn(600);
+        jQuery('.main-container > .preloader').fadeOut(2000, function() {
+            jQuery('.login-form-container').fadeIn(1000);
         });
-    }, 1000);
+    }, 500);
 });
 
 jQuery(window).resize(function() {

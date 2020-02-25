@@ -12,9 +12,11 @@
 
 <body class="home">
 <div class="main-container" >
-    <div class="preloader">
-        <i class="spinner-border text-light"></i>
-    </div>	<div id="wrapper">
+{{--    <div  class="preloader">
+        <img src="https://i.gifer.com/2zH6.gif" />
+    </div>--}}
+    <div class="preloader"><img src="https://i.gifer.com/2zH6.gif" /></div>
+    <div id="wrapper">
         <div class="center logotype"><header></header></div>
         <div id="content" class="site-content">
             <div class="center"></div>
