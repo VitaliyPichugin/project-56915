@@ -54,7 +54,7 @@
         },
         methods: {
             addPost() {
-                this.$http.post('http://infinity.loc/api/posts',{
+                this.$http.post('/api/posts',{
                     'title': this.post.title,
                     'post_content': this.post.post_content,
                     'email': this.post.email,

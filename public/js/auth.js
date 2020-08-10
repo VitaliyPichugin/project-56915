@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -50452,14 +50452,14 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 2:
+/***/ 3:
 /*!************************************!*\
   !*** multi ./resources/js/auth.js ***!
   \************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /var/www/infinity/resources/js/auth.js */"./resources/js/auth.js");
+module.exports = __webpack_require__(/*! /var/www/dev-house/resources/js/auth.js */"./resources/js/auth.js");
 
 
 /***/ })

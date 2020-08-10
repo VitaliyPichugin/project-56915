@@ -127,7 +127,7 @@
             if (typeof page === 'undefined') {
                 page = 1;
             }
-            this.$http.get('http://infinity.loc/api/posts?page='+ page).then((response) => {
+            this.$http.get('/api/posts?page='+ page).then((response) => {
                 this.laravelData = response.data;
                 this.pagination.current = page;
                 this.pagination.total = this.laravelData.meta.total;
@@ -136,7 +136,7 @@
             });
         },
         editPost(postid) {
-            this.$http.get('http://infinity.loc/api/posts/'+ postid).
+            this.$http.get('/api/posts/'+ postid).
             then((data) => {
                 this.post.title = data.data.data.title;
                 this.post.post_content = data.data.data.post_content;
@@ -146,7 +146,7 @@
             });
         },
         updatePost() {
-            this.$http.put('http://infinity.loc/api/posts/'+this.id,{
+            this.$http.put('/api/posts/'+this.id,{
                 'title': this.post.title,
                 'post_content': this.post.post_content,
                 'email': this.post.email,
@@ -173,7 +173,7 @@
             this.id = postid;
         },
         deletePost() {
-            this.$http.delete('http://infinity.loc/api/posts/'+this.id).
+            this.$http.delete('/api/posts/'+this.id).
             then((data) => {
                 this.succmsg = false;
                 var self = this;
